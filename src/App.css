@@ -1,0 +1,70 @@
+#drum-machine {
+  text-align: center;
+  border: 1px solid #61dafb;
+  border-radius: 10px;
+  padding: 20px; /* Este padding puede ser ajustado */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background-color: #1c2025;
+  max-width: 400px; /* Ajusta el ancho máximo */
+  margin: auto; /* Centra el contenedor */
+  overflow: hidden;
+}
+
+
+h1 {
+  color: white;
+}
+
+.whole-drum {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px; /* Espacio entre los botones */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+.drum-pad {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 10px;
+  height: 40px; /* Ajusta la altura */
+  width: 40px; /* Ajusta el ancho */
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #1c2025;
+}
+
+
+.drum-pad:active {
+  background-color: #4cb5e8;
+}
+
+.form-range {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.volume-label {
+  color: #61dafb;
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+  min-width: 100px;
+}
+
+
+#display {
+  background-color: #282c34;
+  padding: 5px; /* Reduce el padding si es necesario */
+  border-radius: 5px;
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  height: 30px; /* Ajusta la altura según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #61dafb;
+  max-width: 100%; /* Asegura que no sobrepase el ancho del contenedor */
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+  white-space: nowrap; /* Evita el salto de línea */
+  color: #f0f0f0;
+}
